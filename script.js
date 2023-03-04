@@ -192,7 +192,7 @@ function processFormData(e) {
     // Validate Form
     isValid = form.checkValidity();
     // Submit Data if Valid
-    if(isValid) {
+    if(isValid && year.value) {
         getDates(Number(year.value));
         setDates();
     }
