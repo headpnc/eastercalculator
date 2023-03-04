@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<title>Orthodox Easter Date Calculator</title>
+</head>
+<body class="flex-container">
+	<div class="flex-container container">
+		<h1>Датум прославе</h1>
+		<h1>православног Васкрса</h1>
+		<form class="flex-container" id="form">
+			<input type="number" min="100" max="3399" name="" placeholder="Година" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Унесите годину у периоду између 100. и 3399.')" id="year" title="Унесите годину у периоду између 100. и 3399.">
+			<button type="submit">Потврди</button>
+		</form>
+		<div class="table-container flex-container">
+			<div class="date-group">
+				<div class="date-header">
+					<h2>Јулијански</h2>
+				</div>
+				<div class="date-number">
+					<h3 id="j-result">-- -- ----</h3>
+				</div>
+			</div> 
+			<div class="date-group">
+				<div class="date-header">
+					<h2>Грегоријански*</h2>
+				</div>
+				<div class="date-number">
+					<h3 id="g-result">-- -- ----</h3>
+				</div>
+			</div> 
+		</div>
+
+		<h6>*Од 1582. године</h6>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
