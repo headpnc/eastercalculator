@@ -34,9 +34,9 @@ body {
 }
 
 .date-number {
-	border: 1px solid black;
+  background: snow;
+  border-radius: 5px;
 	border-radius: 5px;
-  	background: snow;
 }
 
 form {
@@ -78,8 +78,14 @@ h2 {
 	font-size: 26px;
 }
 
+h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 15px;
+}
+
 h1 {
-  	font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
 	font-size: 40px;
 	margin: 0;
 }
@@ -125,8 +131,16 @@ button:active {
 	}
 
 	h2 {
-		font-size: 24px;
+		font-size: 18px;
 	}
+
+  h3 {
+  font-size: 16px;
+}
+
+  .title {
+    margin: 20px;
+  }
 
 	.table-container {
 		flex-direction: column;
