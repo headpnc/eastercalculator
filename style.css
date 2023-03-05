@@ -144,7 +144,7 @@ button:active {
 
 @media screen and (max-width: 1000px) {
   .container {
-  		padding: 15px;
+  		padding: 15px 0px 0px 0px;
 	}
 
 	h1 {
@@ -157,7 +157,11 @@ button:active {
 
   h3 {
   font-size: 16px;
-}
+  }
+
+  h6 {
+    margin: 0px 0px 15px 0px;
+  }
 
   .title {
     margin: 20px 20px 0px;
