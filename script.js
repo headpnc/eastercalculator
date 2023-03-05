@@ -1,10 +1,14 @@
 const form = document.getElementById('form');
 const year = document.getElementById('year');
+const image = document.getElementById('image');
+const mute = document.getElementById('mute');
 const jResult = document.getElementById('j-result');
 const gResult = document.getElementById('g-result');
+const audio = new Audio('soundCompressed.mp3');
 
 
 let isValid = false,
+	counter = 0,
 	dates;
 
 const paschalFullMoon = {
@@ -198,6 +202,25 @@ function processFormData(e) {
     }
 }
 
+function playSound() {
+	counter++; 
+	if(counter >= 3 && audio.paused) {
+		audio.play();
+	mute.style.opacity = '1';
+	}
+	setTimeout(() => {
+		counter = 0;	
+	}, 1000)
+}
+
+function stopSound() {
+	audio.pause();
+	audio.currentTime = 0;
+	mute.style.opacity = '0';
+}
+
 
 // Event Listener
 form.addEventListener('submit', processFormData);
+image.addEventListener('click', playSound);
+mute.addEventListener('click', stopSound);
