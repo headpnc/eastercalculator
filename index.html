@@ -10,7 +10,9 @@
 </head>
 <body class="flex-container">
 	<div class="flex-container container">
-		<i class="fa-solid fa-volume-xmark fa-lg mute" id="mute"></i>
+		<div id="icon-container" hidden>
+			<i class="fa-solid fa-volume-xmark fa-lg mute" id="mute" hidden="true"></i>
+		</div>
 		<div class="title">
 			<h1>Датум прославе</h1>
 			<h1>православног Васкрса</h1>
@@ -38,12 +40,17 @@
 				<div class="date-number">
 					<h3 id="g-result">-- -- ----</h3>
 				</div>
-			</div> 
+			</div>
 		</div>
-
+		<div class="countdown-container" hidden>
+			<h4 id="countdown-title">Васкрс 2024. године прослављамо за</h4>
+			<h4 id="countdown"></h4>
+			<h4 id="countdown2"></h4>
+		</div>
 		<h6>*Од 1582. године</h6>
+		</div>
 	</div>
-    <script src="script-minify.js"></script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/8b2fd6f62c.js" crossorigin="anonymous"></script>
 </body>
 </html>
